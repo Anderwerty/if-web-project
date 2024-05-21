@@ -1,6 +1,6 @@
 package org.example.controller;
 
-import org.example.service.UserService;
+import org.example.service.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +15,7 @@ import java.io.PrintWriter;
 public class MyController extends HttpServlet {
 
     private static final String CONTENT_TYPE = "text/html";
-    private UserService userService;
+
 
 //
 //    public MyController(){
@@ -25,7 +25,7 @@ public class MyController extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        this.userService = new UserService();
+
         super.init();
     }
 
